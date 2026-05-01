@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат-бот поддержки</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="auth-panel" aria-label="Авторизация">
+        <div>
+          <p class="eyebrow">Итоговый проект</p>
+          <h1>Чат-бот поддержки</h1>
+        </div>
+        <form id="authForm" class="auth-form">
+          <input id="username" type="text" placeholder="Логин" minlength="3" required />
+          <input id="password" type="password" placeholder="Пароль" minlength="6" required />
+          <div class="auth-actions">
+            <button type="button" id="registerBtn">Регистрация</button>
+            <button type="submit" class="primary">Войти</button>
+          </div>
+          <p id="authStatus" class="status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="chat-panel" aria-label="Чат">
+        <header class="chat-header">
+          <div>
+            <span class="online-dot"></span>
+            <strong>WebDev Support</strong>
+          </div>
+          <button id="clearBtn" type="button">Очистить чат</button>
+        </header>
+
+        <div id="chatWindow" class="chat-window" aria-live="polite"></div>
+
+        <p id="typingIndicator" class="typing hidden">бот печатает...</p>
+
+        <form id="messageForm" class="message-form">
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Напишите вопрос про HTML, CSS, JS, API..."
+            maxlength="1000"
+            required
+          />
+          <button id="sendBtn" type="submit" class="primary">Отправить</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="/static/js/app.js"></script>
+  </body>
+</html>

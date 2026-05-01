@@ -1,0 +1,130 @@
+ 
+     5   
+   
+ 
+ 
+. 
+ 
+ 
+       ,     
+       5 . 
+   ? 
+        -  - 
+,          .    
+.       :   
+ 
+API      
+1.    , :  
+ POST /auth/register      
+ POST /auth/login     
+ POST /chat/message    ,   ,  
+   
+ GET /chat/history/{session_id}      
+ POST /chat/session      
+2.           
+3.     WebSocket- (  POST 
+/chat/message),  :  
+   WebSocket /ws/chat ( ),  
+       
+      JSON  
+    (  )      
+    WebSocket   JWT-   
+       
+  
+      
+1.    SQLAlchemy-, :  
+ Session   ,       ,  
+      ,  ,   
+ Message         ,   
+   
+ User             
+  
+   
+2.  Alembic-,        
+  
+      
+1.  Pydantic-   ,    
+,        
+2.    ,    ,  
+     ID   
+  
+ 
+ 
+
+ 
+     5   
+   
+ 
+ 
+. 
+ 
+ 
+    
+1.         
+/ ,         
+2.            
+   
+  
+     
+1.      ,  
+      ,   
+   JWT-        
+    
+2.       ,   
+       
+  
+   
+1.  23 ()  ,   , 
+  (   )       
+2.           
+   
+  
+      
+1.        
+2.      ,    
+  
+  
+     
+1.   README      , 
+    ,        
+API   
+2.    API     
+ FastAPI (, Swagger UI)  
+ 
+           ,   
+   .  
+   
+          
+ .      ,   
+      .   .  
+   
+     10 ,   80    .  
+      5 .  
+ 
+
+ 
+     5   
+   
+ 
+ 
+. 
+ 
+ 
+ 
+     +20 ,         
+100.      :  
+        (      
+,      )  10   
+     (     , 
+     ,    )  10   
+ 
+        5-    
+ : 
+  
+  
+ 
+0-39 2 
+40-59 3 
+60-79 4 
+80-100 5 
+ 
